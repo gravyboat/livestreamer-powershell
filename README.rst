@@ -2,7 +2,9 @@ Powershell Script Docs (Twitch)
 ===============================
 
 This guide assumes you have installed Livestreamer and powershell:
+
 http://docs.livestreamer.io/install.html#windows-binaries
+
 https://technet.microsoft.com/en-us/library/hh847837.aspx
 
 
