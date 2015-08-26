@@ -17,8 +17,15 @@ $defaultSite = $ConfigFile.Settings.DefaultSite
 $defaultStream = $ConfigFile.Settings.DefaultStream
 $defaultQuality = $ConfigFile.Settings.DefaultQuality
 
-$site = Read-Host "What Streaming site? (default is $defaultSite)"
-$stream = Read-Host "What user on the site? (default is $defaultStream)"
+$site = Read-Host "What Streaming site? [twitch.tv, youtube.com] (default is $defaultSite)"
+
+if ($site -eq "youtube.com")
+{
+    $site = "youtube.com/watch?v="
+    $youtube = $TRUE
+}
+
+$stream = Read-Host "What user or video? [twitch: totalbiscuit, youtube: njCDZWTI-xg ] (default is $defaultStream)"
 $quality = Read-Host "What quality? (default is $defaultQuality)"
 
 if (-Not $site)
@@ -38,8 +45,14 @@ if (-Not $quality)
 
 try
 {
-
-    & $fullExecutablePath "$site/$stream" "$quality"
+    if ($youtube)
+    {
+        & $fullExecutablePath "$site$stream" "$quality"
+    }
+    else
+    {
+        & $fullExecutablePath "$site/$stream" "$quality"
+    }
 }
 catch
 {
