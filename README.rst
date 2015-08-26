@@ -1,4 +1,4 @@
-Powershell Script Docs (Twitch)
+Powershell Script Docs (Twitch, Youtube)
 ===============================
 
 This guide assumes you have installed Livestreamer and powershell:
