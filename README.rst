@@ -1,4 +1,4 @@
-Powershell Script Docs (Twitch, Youtube)
+Powershell Script Docs (Twitch, Youtube, Crunchyroll)
 ===============================
 
 This guide assumes you have installed Livestreamer and powershell:
@@ -21,4 +21,4 @@ and 32 bit versions of powershell. You will also need to run PowerShell as an
 admin for this to work.
 
 Right click the script and run as a powershell script and it should now prompt
-for the main website, stream, and the quality.
+for the main website, stream/episode, and the quality if applicable.
