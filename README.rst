@@ -1,6 +1,10 @@
 Powershell Script Docs (Twitch, Youtube, Crunchyroll)
 ===============================
 
+**THIS REPO IS DEPRECATED,**
+**USE https://github.com/gravyboat/streamlink-powershell AND**
+**https://github.com/streamlink/streamlink/**
+
 This guide assumes you have installed Livestreamer and powershell:
 
 http://docs.livestreamer.io/install.html#windows-binaries
